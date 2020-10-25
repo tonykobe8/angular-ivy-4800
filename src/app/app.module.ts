@@ -14,14 +14,14 @@ import { ProductsComponent } from './products/products.component';
 import { ProductsListComponent } from 
 './products-list/products-list.component';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
+import { MainComponent } from './main/main.component';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
-  declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, HomeComponent ],
+  imports:      [  RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
+  declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, MainComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
