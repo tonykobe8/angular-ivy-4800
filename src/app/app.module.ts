@@ -17,9 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 
 
-
 @NgModule({
-  imports:      [  RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
+  imports:      [ RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
   declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, MainComponent],
   bootstrap:    [ AppComponent ]
 })
