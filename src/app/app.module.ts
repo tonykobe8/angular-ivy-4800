@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 
 
 
+
 @NgModule({
   imports:      [ BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
   declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, HomeComponent ],
