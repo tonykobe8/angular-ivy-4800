@@ -18,7 +18,6 @@ import { MainComponent } from './main/main.component';
 
 
 
-
 @NgModule({
   imports:      [  RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
   declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, MainComponent],
