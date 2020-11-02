@@ -13,6 +13,13 @@ export class ProductsListComponent implements OnInit {
  get products() {
     return this.productsService.getAllProducts();
   }
+  delete(id: number) {
+    const emp = this.products.findIndex(c => c.Id == id);
+     if (emp >-1) {
+    this.products.splice(emp,1);
+
+  }
+  }
 
   ngOnInit() {
   }

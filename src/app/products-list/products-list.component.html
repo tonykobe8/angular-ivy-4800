@@ -1,12 +1,13 @@
 <a href routerLink='/products'> + Add Products</a>
 <h1> Products List : </h1><hr>
 <div *ngFor="let products of products; index as i">
-  <p><mat-grid-list cols="2" rowHeight="2:1">
+  
   <img src="{{products.image}}">
 {{products.Name}} &nbsp; {{products.Price}} &nbsp;{{products.Description}}
 <a href> view</a> &nbsp;
 <button>Edit</button>&nbsp;
-<button>Delete</button>
-</mat-grid-list></p>
+
+<button (click)="delete(products.Id)">delete</button>
+
 <hr>
 </div>
