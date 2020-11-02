@@ -4,10 +4,10 @@
   
   <img src="{{products.image}}">
 {{products.Name}} &nbsp; {{products.Price}} &nbsp;{{products.Description}}
-<a href> view</a> &nbsp;
+<a href (click)="view(products.Id)"> view</a> &nbsp;
 <button>Edit</button>&nbsp;
 
-<button (click)="delete(products.Id)">delete</button>
+<button (click)="delete(i)">delete</button>
 
 <hr>
 </div>
