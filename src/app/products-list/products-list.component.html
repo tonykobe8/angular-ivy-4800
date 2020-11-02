@@ -4,7 +4,8 @@
   
   <img src="{{products.image}}">
 {{products.Name}} &nbsp; {{products.Price}} &nbsp;{{products.Description}}
-<a href (click)="view(products.Id)"> view</a> &nbsp;
+<button (click)="view(products.Id)"> view</button> &nbsp;
+
 <button>Edit</button>&nbsp;
 
 <button (click)="delete(i)">delete</button>
