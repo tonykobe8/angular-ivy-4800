@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-products-list',
@@ -6,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
-products = [{
- image:"https://stackblitz.com/files/angular-ivy-pxmohb/github/tonykobe8/angular-ivy-pxmohb/master/s-zoom.file", Name:'Portable monitor',Price:'R2,699',Description:'Asus MB168B 15.6'
-},{
- image:"https://stackblitz.com/files/angular-ivy-pxmohb/github/tonykobe8/angular-ivy-pxmohb/master/8806087691450_3-zoom.jpg", Name:'Curved monitor',Price:'R3,677',Description:'LG 25UM58-P Ultra Wild HD'
-}];
-  constructor() { }
+
+  constructor(private router: Router,private productsService: ProductsService ){ }
+ get products() {
+    return this.productsService.getAllProducts();
+  }
 
   ngOnInit() {
   }
