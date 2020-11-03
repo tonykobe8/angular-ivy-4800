@@ -1,5 +1,8 @@
   
-<a routerLink="products-list">Back<a> |
-<p>
-details works!
-</p>
+<a  routerLink="/products-list">Back</a> |
+ 
+<h2>Product Details</h2>
+<div *ngFor="let products of products; index as i">
+  
+  <img src="{{products.image}}"><br>
+<p>Name: {{products.Name}}<br>Price: {{products.Price}}<br>Description: {{products.Description}}</p>
