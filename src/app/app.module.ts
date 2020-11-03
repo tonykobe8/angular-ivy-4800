@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 
-
 import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Routes, RouterModule } from '@angular/router';
@@ -19,10 +18,11 @@ import { ProductsListComponent } from
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { ProductsService } from './products.service';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   imports:      [ RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
-  declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, MainComponent],
+  declarations: [ AppComponent, HelloComponent, ProductsListComponent, ProductsComponent, RegisterComponent, LoginComponent, MainComponent, DetailsComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductsService]
 })
