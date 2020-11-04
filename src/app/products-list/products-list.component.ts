@@ -19,7 +19,9 @@ export class ProductsListComponent implements OnInit {
   delete(index) {
     this.products.splice(index, 1);
   }
-
+edit(i){
+  console.log('sfddgf');
+}
   ngOnInit() {}
 
   viewProduct(selectedProduct) {
