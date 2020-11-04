@@ -28,4 +28,8 @@ export class ProductsService {
     return this.products;
   }
   constructor() {}
+ addProducts(prod:Products){
+ prod.Id = this.products.length + 1;
+     this.products.push(prod);
+ }
 }

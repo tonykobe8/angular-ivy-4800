@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
+
 import { ProductsComponent } from './products/products.component';
 import { ProductsListComponent } from 
 './products-list/products-list.component';

@@ -1,14 +1,15 @@
 <h1> Add New Project :</h1><hr>
+ <form  #f="ngForm" (ngSubmit)="save(f.value)">
 <label>Name :</label><br>
-<input type="text" placeholder="type name" name="Name" matInput>
+<input type="text" placeholder="type name" ngModel  name="Name" matInput>
 <br><br>
 <label>Price :</label><br>
-<input type="text" placeholder="type Price" name="Price" matInput>
+<input type="text" placeholder="type Price" ngModel name="Price" matInput>
 <br><br>
 <label>Description :</label><br>
-<input type ="text" placeholder="type Description" name="Description" matInput>
+<input type ="text" placeholder="type Description" ngModel name="Description" matInput>
 <br><br>
 <label>Image :</label><br>
-<input type ="text" placeholder="image" name="Description" matInput>
+<input type ="text" placeholder="image" ngModel name="Description" matInput>
 <br><br>
 <button>save</button><hr>
