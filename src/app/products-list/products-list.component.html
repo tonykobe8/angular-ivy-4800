@@ -1,14 +1,15 @@
 <a href routerLink='/products'> + Add Products</a>
-<h1> Products List : </h1><hr>
-<div *ngFor="let products of products; index as i">
-  
-  <img src="{{products.image}}">
-{{products.Name}} &nbsp; {{products.Price}} &nbsp;{{products.Description}}
-<button routerLink="/details"> view</button> &nbsp;
-
-<button>Edit</button>&nbsp;
-
-<button (click)="delete(i)">delete</button>
-
+<h1> Products List : </h1>
 <hr>
+<div *ngFor="let product of products; index as i">
+
+	<img src="{{product.image}}">
+{{product.Name}} &nbsp; {{product.Price}} &nbsp;{{product.Description}}
+	<button (click)="viewProduct(product)"> view</button> &nbsp;
+
+	<button>Edit</button>&nbsp;
+
+	<button (click)="delete(i)">delete</button>
+
+	<hr>
 </div>
