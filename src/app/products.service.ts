@@ -25,6 +25,12 @@ export class ProductsService {
       Name: "Curved monitor",
       Price: "R3,677",
       Description: "LG 25UM58-P Ultra Wild HD"
+    },{
+      Id:3,image:"https://www.makro.co.za/sys-master/images/h24/h7f/9378396405790/5efce484-70bf-4060-8e1a-ca3322508fe2-qpn13_medium",
+      Name: "Toshiba hard drive",
+      Price: "R3,677",
+      Description: "Toshiba Canvio Advance-1TB-USB 3.0"
+
     }
   ];
 
