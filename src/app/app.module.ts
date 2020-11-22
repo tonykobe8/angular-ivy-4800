@@ -10,14 +10,19 @@ import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
-
 import { ProductsComponent } from './products/products.component';
 import { ProductsListComponent } from 
 './products-list/products-list.component';
+
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { ProductsService } from './products.service';
 import { DetailsComponent } from './details/details.component';
+
+
+
+
+
 
 @NgModule({
   imports:      [ RouterModule,BrowserModule,BrowserAnimationsModule,MatFormFieldModule, FormsModule , AppRoutingModule,MatInputModule,MatGridListModule],
