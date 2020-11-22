@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { ProductsService } from "../products.service";
-
+import { Products } from "../products";
 
 
 
@@ -11,7 +11,7 @@ import { ProductsService } from "../products.service";
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-
+ selectedFile: Products ;
    constructor(
     private router: Router,
     private productsService: ProductsService
@@ -19,8 +19,10 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
   }
-   processFile(image) {
-}
+   processFile(imageInput: any) {
+     
+  }
+
   save(product) {
 this.productsService.addProducts(product);
   this.router.navigate(['/products-list']);
