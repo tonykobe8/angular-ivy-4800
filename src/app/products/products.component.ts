@@ -21,7 +21,7 @@ export class ProductsComponent implements OnInit {
   }
   save(product) {
 this.productsService.addProducts(product);
-  this.router.navigate(['/']);
+  this.router.navigate(['/products-list']);
   }
 
 }
