@@ -6,6 +6,10 @@ export class ProductsService {
   selectedproduct: Products;
 
   products: Products[] = [
+    {Id:0 ,image:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTBuxm6Y-s7alppMXyuBq_VCicyX6cFrDXhTFUrKnTh8Er0TOnH2EzJIx2NqlIjSbm5Vjhe8nFbwZ0X&usqp=CAc",
+    Name: "Surface Go",
+      Price: "R8,699",
+      Description: "Surface Go2 P/4/64GB"},
     {
       Id: 1,
       image:
