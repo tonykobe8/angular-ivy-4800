@@ -19,6 +19,8 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
   }
+   processFile(image) {
+}
   save(product) {
 this.productsService.addProducts(product);
   this.router.navigate(['/products-list']);
